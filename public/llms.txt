@@ -1,0 +1,13 @@
+# Prompt to UI
+
+Prompt to UI is a web-based artificial intelligence tool that generates React and Tailwind CSS user interfaces from natural language prompts. It features a live code editor with syntax highlighting and a real-time preview environment using a secure sandboxed iframe.
+
+## Capabilities
+- **AI UI Generation**: Connects to the Groq API (or any OpenAI-compatible endpoint) to stream generated React components.
+- **Live Preview**: Instantly renders React components without needing a dev server, parsing JSX dynamically in the browser.
+- **Editor**: Features an integrated CodeMirror editor to fine-tune the generated code.
+
+## Privacy & Security
+- The tool runs entirely in the browser.
+- User API keys are stored securely in local storage and are only sent directly to the AI provider endpoint. They are never transmitted to our servers.
+- The preview environment executes code in a sandboxed iframe to ensure isolation.
