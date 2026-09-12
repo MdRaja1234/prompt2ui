@@ -77,7 +77,7 @@ function App() {
   };
 
   return (
-    <div className="flex h-screen bg-gray-900 text-white overflow-hidden font-sans">
+    <div className="flex flex-col md:flex-row min-h-screen md:h-screen bg-gray-900 text-white overflow-y-auto md:overflow-hidden font-sans">
       <EditorPanel 
         apiKey={apiKey} setApiKey={setApiKey}
         baseUrl={baseUrl} setBaseUrl={setBaseUrl}

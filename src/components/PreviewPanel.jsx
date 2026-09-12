@@ -25,7 +25,7 @@ export function PreviewPanel({ code, isGenerating }) {
   }, [code]);
 
   return (
-    <div className="w-1/2 flex flex-col bg-white overflow-hidden relative">
+    <div className="w-full md:w-1/2 flex-1 md:flex-none min-h-[500px] md:min-h-0 md:h-full flex flex-col bg-white overflow-hidden relative">
        <div className="flex items-center px-4 py-2 bg-gray-100 border-b border-gray-300 text-xs font-semibold text-gray-500 uppercase tracking-wider shadow-sm z-10">
           Live Preview
         </div>

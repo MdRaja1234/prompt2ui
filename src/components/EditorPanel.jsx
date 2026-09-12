@@ -12,7 +12,7 @@ export function EditorPanel({
   isGenerating, error, onGenerate
 }) {
   return (
-    <div className="w-1/2 flex flex-col border-r border-gray-700 relative overflow-hidden bg-gray-900">
+    <div className="w-full md:w-1/2 h-auto md:h-full flex flex-col border-b md:border-b-0 md:border-r border-gray-700 relative overflow-hidden bg-gray-900 shrink-0">
       
       {/* Animated Background Blobs */}
       <div className="absolute top-[-10%] left-[-10%] w-96 h-96 bg-blue-500/40 rounded-full mix-blend-screen filter blur-[80px] animate-blob pointer-events-none"></div>
@@ -101,7 +101,7 @@ export function EditorPanel({
         </div>
 
         {/* Code Editor */}
-        <div className="flex-1 flex flex-col min-h-0 overflow-hidden bg-[#282c34]/90 backdrop-blur-md">
+        <div className="flex-1 flex flex-col min-h-[300px] md:min-h-0 overflow-hidden bg-[#282c34]/90 backdrop-blur-md">
           <div className="flex items-center justify-between px-4 py-2 bg-gray-800/50 border-b border-gray-700/50 text-xs font-medium text-gray-400 uppercase tracking-wider">
             <div className="flex items-center gap-2">
               <Code className="w-4 h-4" /> Live Code (Editable)
